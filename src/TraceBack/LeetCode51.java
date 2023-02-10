@@ -26,7 +26,7 @@ public class LeetCode51 {
             return;
         }
         for (int col = 0 ; col < n; col++){
-            if(isValid(row, col, chessBoard)){
+            if(isValid(row, col,n, chessBoard)){
                 chessBoard[row][col] = 'Q';
                 backtrack(n, row+1, chessBoard);
                 chessBoard[row][col] = '.';
