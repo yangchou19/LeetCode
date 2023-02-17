@@ -8,6 +8,7 @@ public class LeetCode45 {
      * i + j < n
      * 返回到达 nums[n - 1] 的最小跳跃次数。生成的测试用例可以到达 nums[n - 1]。
      */
+    public int xiaoming = 0;
     public int jump(int[] nums) {
         int count = 0;
         if (nums.length == 1) return count;

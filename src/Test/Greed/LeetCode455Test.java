@@ -11,6 +11,7 @@ public class LeetCode455Test {
         int[] children = {1,2,3};
         int[] s = {1,1};
         LeetCode455 test = new LeetCode455();
-        test.findContentChildren(children,s);
+//        test.findContentChildren(children,s);
+        System.out.println(Integer.MIN_VALUE);
     }
 }
