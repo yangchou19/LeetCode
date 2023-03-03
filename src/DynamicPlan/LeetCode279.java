@@ -11,14 +11,14 @@ public class LeetCode279 {
         int max =Integer.MAX_VALUE;
         Arrays.fill(dp,max);
         dp[0] = 0;
-        for(int i=0; i<=Math.sqrt(n);i++){
+        for(int i=0; i*i<=n;i++){
             int num = i*i;
             for(int j=num; j<=n;j++){
-                if(dp[j]!=max){
+                if(dp[j-num]!=max){
                     dp[j] = Math.min(dp[j],dp[j-num]+1);
                 }
             }
         }
-        return dp[n];
+        return dp[n]==max?-1:dp[n];
     }
 }
